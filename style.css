@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primarily-color: #645cff;
+  --secondarily-color: #ffffff;
+  --tertiary-color: #f8fafc;
+
+  --primarily-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --secondarily-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  --small-letter-spacing: 1px;
+  --medium-letter-spacing: 2px;
+  --large-letter-spacing: 5px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Afacad", sans-serif;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 20px 0px 20px;
+}
+
+.main-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 30px 0px 30px 0px;
+}
+
+.navbar-list {
+  display: none;
+}
+
+.page-name h2 {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: var(--medium-letter-spacing);
+}
+
+.text-primarily-color {
+  color: var(--primarily-color);
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-icons a img {
+  width: 20px;
+}
+
+.top-middle-side {
+  background-color: var(--primarily-color);
+}
+
+.first-description {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 250px 0px 250px 0px;
+}
+
+.first-description h2 {
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: var(--large-letter-spacing);
+  padding-bottom: 15px;
+  color: var(--secondarily-color);
+}
+
+.first-description p {
+  padding: 0px 10px 30px 10px;
+  color: var(--secondarily-color);
+}
+
+.primarily-btn {
+  padding: 10px 20px;
+  font-weight: 700;
+  border: transparent;
+  border-radius: 5px;
+  letter-spacing: var(--small-letter-spacing);
+  box-shadow: var(--primarily-box-shadow);
+  background-color: var(--primarily-color);
+  color: var(--secondarily-color);
+}
+
+.section-name h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  padding-top: 40px;
+  text-transform: uppercase;
+  letter-spacing: var(--large-letter-spacing);
+}
+
+.about-section img {
+  width: 100%;
+  object-fit: contain;
+  margin: 40px 0px 40px 0px;
+}
+
+.about-description h3 {
+  text-align: left;
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: 20px 0px 20px 0px;
+  letter-spacing: var(--medium-letter-spacing);
+}
+
+.about-description p {
+  text-align: justify;
+  padding-bottom: 20px;
+}
+
+.about-description a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.services-section {
+  margin-top: 100px;
+  background-color: var(--tertiary-color);
+}
+
+.icons-with-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 50px;
+  background-color: var(--primarily-color);
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.icons-with-background img {
+  height: 30px;
+}
+
+.advantages h4 {
+  font-size: 22px;
+  padding: 20px 0px 15px 0px;
+  text-transform: uppercase;
+  letter-spacing: var(--medium-letter-spacing);
+}
+
+.advantages p {
+  text-align: center;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.tour-box {
+  position: relative;
+  margin: 40px 0px 40px 0px;
+  background-color: var(--secondarily-color);
+  box-shadow: var(--primarily-box-shadow);
+}
+
+.tour-box > img {
+  width: 100%;
+  object-fit: contain;
+  margin: 0px 0px 20px 0px;
+}
+
+.tour-box h4 {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0px 0px 30px 25px;
+  letter-spacing: var(--small-letter-spacing);
+}
+
+.destination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+  padding-bottom: 20px;
+}
+
+.destination-direction {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.destination-direction img {
+  height: 20px;
+  padding-left: 20px;
+  filter: invert(31%) sepia(68%) saturate(4223%) hue-rotate(235deg)
+    brightness(111%) contrast(101%);
+}
+
+.destination-direction > p {
+  color: var(--primarily-color);
+}
+
+.destination-info p {
+  padding-right: 20px;
+}
+
+.destination-date {
+  position: absolute;
+  top: 4%;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background-color: var(--primarily-color);
+  padding: 2px;
+}
+
+.tours-section a:last-of-type {
+  justify-content: center;
+  display: flex;
+  text-decoration: none;
+}
+
+.container-without {
+  margin-top: 40px;
+  background-color: var(--tertiary-color);
+}
+
+.gallery-box {
+  margin-top: 30px;
+  background-color: var(--primarily-color);
+}
+
+.gallery-box > img {
+  width: 100%;
+  object-fit: contain;
+  margin: 0px 0px 2px 0px;
+}
+
+.bottom-top-side {
+  background-color: var(--primarily-color);
+}
+
+.more-info-section {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.update-description h4 {
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-right: 5px;
+  color: var(--secondarily-color);
+  letter-spacing: var(--large-letter-spacing);
+}
+
+.update-description p {
+  text-transform: capitalize;
+  padding-top: 15px;
+  color: var(--secondarily-color);
+}
+
+#email {
+  position: relative;
+  text-transform: uppercase;
+  border: 2px solid var(--secondarily-color);
+  outline: none;
+  padding: 3px 6px;
+}
+
+input[type="submit"] {
+  position: absolute;
+  transform: translate(-100%, 10%);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+  padding: 3px 6px;
+}
